@@ -14,36 +14,78 @@
 	<!-- Např. tlačítko -->
 	<button class="button">Tlačítko</button>
 
-
-
 	<h2>Komponenta s modifikátorem</h2>
 	<!-- Např. tlačítko - primární, sekundární, velké -->
 	<!-- Nadefinujeme barvy jako proměnné -->
 	<button class="button button--primary">Primární</button>
 	<button class="button button--secondary">Sekundární</button>
 
-
+	<button class="button button--big">Velké</button>
+	<button class="button button--primary button--big">Primární</button>
+	<button class="button button--secondary button--big">Sekundární</button>
 
 	<h2>Komponenta s vnitřními elementy</h2>
 	<!-- Např. figure s obrázkem a popisem -->
-
-
+	<figure class="photo">
+		<img class="photo__image" src="foto.jpg" alt="obrázek">
+		<figcaption class="photo__caption">Popisek obrázek</figcaption>
+	</figure>
 
 	<h2>Komponenta s vnitřními elementy s modifikátorem</h2>
 	<!-- Obrázek ve figure má rámeček -->
+	<figure class="photo">
+		<img class="photo__image photo__image--border" src="foto.jpg" alt="obrázek">
+		<figcaption class="photo__caption">Popisek obrázek</figcaption>
+	</figure>
 
-
-
+	<figure class="photo photo--inverted">
+		<img class="photo__image photo__image--border" src="foto.jpg" alt="obrázek">
+		<figcaption class="photo__caption">Popisek obrázek</figcaption>
+	</figure>
 
 	<h2>Komponenta s vnitřními vnořenými elementy</h2>
 	<!-- V popisu obrázku je vložená ještě citace -->
-
+	<figure class="photo">
+		<img class="photo__image" src="foto.jpg" alt="obrázek">
+		<figcaption class="photo__caption">
+			Citace k obrázku:
+			<blockquote class="photo__quote">"Pochop a naučíš se BEM metodiku."</blockquote>
+		</figcaption>
+	</figure>
 
 
 	<h2>Vnořené komponenty</h2>
 	<!-- galerie fotek s popisem, tlačítka koupit -->
+	<figure class="photo">
+		<img class="photo__image" src="foto.jpg" alt="obrázek">
+		<figcaption class="photo__caption">Popisek obrázek
+			<button class="button button--primary">Chci POCHOPIT</button>
+		</figcaption>
+	</figure>
 
+	<h2>Komponenta v komponentě</h2>
+	<div class="gallery">
+		<figure class="photo">
+			<img class="photo__image" src="foto.jpg" alt="obrázek">
+			<figcaption class="photo__caption">Popisek obrázek
+				<button class="button button--primary">Chci POCHOPIT</button>
+			</figcaption>
+		</figure>
+		<figure class="photo">
+			<img class="photo__image" src="foto.jpg" alt="obrázek">
+			<figcaption class="photo__caption">Popisek obrázek
+				<button class="button button--primary">Chci POCHOPIT</button>
+			</figcaption>
+		</figure>
+		<figure class="photo">
+			<img class="photo__image" src="foto.jpg" alt="obrázek">
+			<figcaption class="photo__caption">Popisek obrázek
+				<button class="button button--primary">Chci POCHOPIT</button>
+			</figcaption>
+		</figure>
+		
 
+	</div>
 
 </body>
 </html>

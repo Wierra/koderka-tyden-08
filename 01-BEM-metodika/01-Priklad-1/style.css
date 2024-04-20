@@ -11,16 +11,18 @@ h2 {
 }
 
 /* ************************************ */
-
 /*
 	#0077ff			primární barva
 	#c0c0c0			sekundární barva
 */
 
+/* <!-- Nadefinujeme barvy jako proměnné --> */
 :root{
 	--primary: #0077ff;
-	--secondary: #c0c0c0;
+	--secondary: #6fa2dc;
 }
+
+/* <!-- Např. tlačítko --> */
 .button{
 	font-size: 16px;
 	padding: 10px 20px;
@@ -29,6 +31,8 @@ h2 {
 	border-radius: 10px;
 }
 
+/* <!-- Např. tlačítko - primární, sekundární, velké -->
+<!-- Nadefinujeme barvy jako proměnné --> */
 .button--primary{
 	background-color: var(--primary);
 	color: white;
@@ -37,6 +41,62 @@ h2 {
 
 .button--secondary{
 	background-color: var(--secondary);
-	color: black;
+	color: white;
 	border-color: var(--secondary);
+}
+
+.button--big{
+	font-size: 20px;
+	padding: 15px 30px;
+}
+
+/* <!-- Např. figure s obrázkem a popisem --> */
+.photo{
+	margin: 0;
+	display: inline-block;
+	padding: 20px;
+	background-color: var(--secondary);
+}
+
+.photo__image{
+	display: block;
+}
+
+.photo__caption{
+	font-style: italic;
+	margin: 10px;
+}
+
+/* <!-- Obrázek ve figure má rámeček --> */
+.photo__image--border{
+	border: 5px solid var(--primary);
+}
+
+.photo--inverted{
+	background-color: var(--primary);
+}
+
+.photo--inverted .photo__caption{
+	color: whitesmoke;
+}
+
+.photo--inverted .photo__image--border{
+	border-color: var(--secondary);
+}
+
+/* <!-- V popisu obrázku je vložená ještě citace --> */
+.photo__quote{
+	margin: 0;
+	color: var(--primary);
+}
+
+/* <!-- galerie fotek s popisem, tlačítka koupit --> */
+
+.gallery{
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery > *{
+	flex: 0 0 calc((100% - 60px)/3);
 }
