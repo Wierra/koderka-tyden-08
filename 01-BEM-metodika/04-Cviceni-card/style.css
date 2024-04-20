@@ -1,10 +1,57 @@
 /* intuitivnejší box model */
 html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+*, ::before, ::after { box-sizing: inherit; padding: 0; margin: 0;}
 
 body {
 	font: 16px/1.5 sans-serif;
 }
 
 /* ------------------------------------------------ */
+:root{
+	--c-text: #0077ff;
+}
 
+.card{
+	width: 600px;
+	margin: auto auto;
+	margin-top: 150px;
+	background-color: rgb(228, 228, 228);
+}
+
+.card__image{
+	width: 600px;
+	/* padding: 15px; */
+}
+
+.card__title{
+	text-align: left;
+	color: var(--c-text);
+	margin-bottom: 20px;
+	padding: 20px 0 0 40px;
+	font-size: 40px;
+}
+
+.card__text{
+	font-size: 30px;
+	padding: 0 40px;
+	color: grey
+}
+
+.card__icon{
+	display: flex;
+	gap: 20px;
+	padding: 40px 40px;
+}
+
+.card__number{
+	font-size: 25px;
+	margin: auto 0;
+	font-weight: 800;
+	color: var(--c-text);
+	padding-right: 20px;;
+}
+
+.card__img{
+	color: gray;
+	width: 10%;
+}
