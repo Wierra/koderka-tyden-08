@@ -1,6 +1,16 @@
-$cervena: #ff4400;
+$modra: #0077FF;
 
+header{
+    border: 5px solid $modra;
+}
 h1{
-    color: $cervena;
-    background-color: blue;
+    color: $modra;
+}
+
+button{
+    background-color: $modra;
+    border: 1px solid $modra;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
 }
