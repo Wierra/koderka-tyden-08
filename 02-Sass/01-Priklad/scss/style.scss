@@ -1,6 +1,10 @@
 $primary: #0077FF;
+
 $font-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-special: Georgia, serif;
+
+$spacer: 30px;
+
 
 body{
     padding:20px;
@@ -10,17 +14,19 @@ body{
 header{
     border: 5px solid $primary;
     text-align: center;
+    padding: $spacer;
 }
 h1{
     color: $primary;
     font-family: $font-special;
+    margin: 0;
 }
 
 button{
     background-color: $primary;
     border: 1px solid $primary;
     border-radius: 10px;
-    padding: 10px 30px;
+    padding: $spacer /2;
     color: white;
     font-family: $font-special;
 }
