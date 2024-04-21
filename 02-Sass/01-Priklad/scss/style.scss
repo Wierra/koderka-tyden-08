@@ -10,24 +10,36 @@ body{
     font-family: $font-base;
 }
 
-header{
+.header{
     border: 5px solid $primary;
     // text-align: center;
     padding: $spacer;
 
-    a{
+    &__title{
+        color: $primary;
+        font-family: $font-special;
+        margin: 0;
+    }
+    
+    &__menu{
+        list-style: none;
+        padding: 0;
+    }
+    
+    &__link{
         background-color: $primary;
         color: white;
         padding: $spacer;
         display: block;
+        text-decoration: none;
+
+        &:hover{
+            background-color: rgb(243, 202, 149);
+            color: grey;
+        }
     }
 }
 
-h1{
-    color: $primary;
-    font-family: $font-special;
-    margin: 0;
-}
 
 button{
     background-color: $primary;
@@ -37,3 +49,21 @@ button{
     color: white;
     font-family: $font-special;
 }
+
+footer{
+    margin-top: $spacer;
+    padding: $spacer/2;
+    background-color: $primary;
+    color: white;
+
+    @media (min-width: 700px){
+        background-color: rgb(105, 246, 105);
+        color: gray;
+        }
+    
+    @media (min-width: 990px){
+        background-color: black;
+        color: white;
+    }
+}
+

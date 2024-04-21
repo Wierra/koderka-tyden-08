@@ -3,21 +3,29 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header {
+.header {
   border: 5px solid #0077FF;
   padding: 30px;
 }
-header a {
+.header__title {
+  color: #0077FF;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+.header__menu {
+  list-style: none;
+  padding: 0;
+}
+.header__link {
   background-color: #0077FF;
   color: white;
   padding: 30px;
   display: block;
+  text-decoration: none;
 }
-
-h1 {
-  color: #0077FF;
-  font-family: Georgia, serif;
-  margin: 0;
+.header__link:hover {
+  background-color: rgb(243, 202, 149);
+  color: grey;
 }
 
 button {
@@ -27,4 +35,23 @@ button {
   padding: 15px;
   color: white;
   font-family: Georgia, serif;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #0077FF;
+  color: white;
+}
+@media (min-width: 700px) {
+  footer {
+    background-color: rgb(105, 246, 105);
+    color: gray;
+  }
+}
+@media (min-width: 990px) {
+  footer {
+    background-color: black;
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
