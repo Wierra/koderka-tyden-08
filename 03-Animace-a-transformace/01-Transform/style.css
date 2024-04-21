@@ -19,7 +19,24 @@ h2 {
 .posun		{ background-color: #2ecc71;}
 .rotace 	{ background-color: #e74c3c;}
 .zvetseni	{ background-color: #3498db;}
+.zkoseni	{ background-color: yellowgreen;}
 
 /* ----------------------- */
 
 
+.posun:hover{
+	transform: translateX(100px);
+}
+
+.rotace:hover{
+	transform: rotate(30deg);
+}
+
+.zvetseni:hover{
+	transform: scale(1.5);
+	transform-origin: top left;
+}
+
+.zkoseni:hover{
+	transform: skewX(30deg);
+}

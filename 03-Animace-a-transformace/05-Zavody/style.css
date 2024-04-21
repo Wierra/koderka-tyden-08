@@ -29,3 +29,22 @@ body {
 .raketka1 { top: 150px; }
 .raketka2 { top: 330px; }
 .raketka3 { top: 510px; }
+
+@keyframes pohyb{
+	0% { transform: translateX(0) rotate(0);}
+	40% { transform: translateX(845px) rotate(0);}
+	60% { transform: translateX(845px) rotate(180deg);}
+	100% { transform: translateX(0) rotate(180deg);}
+}
+
+.raketka1{
+	animation: pohyb 18s both;
+}
+
+.raketka2{
+	animation: pohyb 12s 1s both;
+}
+
+.raketka3{
+	animation: pohyb 16s both;
+}
