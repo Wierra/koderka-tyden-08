@@ -5,8 +5,13 @@ body {
 
 header {
   border: 5px solid #0077FF;
-  text-align: center;
   padding: 30px;
+}
+header a {
+  background-color: #0077FF;
+  color: white;
+  padding: 30px;
+  display: block;
 }
 
 h1 {
